@@ -33,10 +33,10 @@ subscribeButton.addEventListener('click', function () {
 
 // Aggiungere un'altra voce al menu usando JS
 const ul = document.querySelector("ul");
-ul.classList.add('list');
 const li = document.createElement("li");
 const a = document.createElement ("a");
-console.log(li);
+a.href = "#";
 a.append('Pippo');
 li.append(a);
 ul.prepend(li);
+console.log(li);
