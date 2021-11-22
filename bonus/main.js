@@ -23,4 +23,13 @@ elementClose.addEventListener('click', function () {
     hamburgerMenu.style.display = 'none';
 })
 
-//Far cambiare colore ad un altro elemento usando JS
+//Far cambiare colore ad un altro elemento usando JS: cambio colore al bottone "Iscriviti" quando premo su "Scopri il corso"
+const subscribeButton = document.querySelector('.cta');
+console.log(subscribeButton);
+
+const corso = document.querySelector('.corso');
+console.log(corso);
+
+corso.addEventListener('click', function () {
+    subscribeButton.style.backgroundColor = 'blue';
+})
