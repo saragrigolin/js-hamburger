@@ -11,7 +11,7 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 
 // al click dell'icona, l'hamburger menu diventa display block
 elementHamburger.addEventListener('click', function () {
-    hamburgerMenu.style.display = 'block';
+    hamburgerMenu.classList.add('active');
 })
 
 //creo variabile per icona chiusura hamburger menu
@@ -20,7 +20,7 @@ console.log(elementClose);
 
 //al click dell'icona, l'hamburger menu diventa display none
 elementClose.addEventListener('click', function () {
-    hamburgerMenu.style.display = 'none';
+    hamburgerMenu.classList.remove('active');
 })
 
 //Far cambiare colore ad un altro elemento usando JS: cambio colore al bottone "Iscriviti" quando lo clicco
